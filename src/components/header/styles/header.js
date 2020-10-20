@@ -4,15 +4,12 @@ import { Link as ReactRouterLink } from 'react-router-dom';
 export const Background = styled.div`
     display: flex;
     flex-direction: column;
-    background: url(${({ src }) => (src ? `../images/misc/${src}.jpg` : `..images/misc/home-bg.jpg`)}) top left cover no-repeat;
+    background: url(${({ src }) => (src ? `../images/misc/${src}.jpg` : '../images/misc/home-bg.jpg')}) top left / cover
+    no-repeat;
 
     @media (max-width: 1000px) {
         ${({ dontShowOnSmallViewPort }) => dontShowOnSmallViewPort && `backgrond: none;`}
     }
-`;
-
-export const Frame = styled.div`
-
 `;
 
 export const Container = styled.div`
