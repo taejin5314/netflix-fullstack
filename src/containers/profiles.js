@@ -23,5 +23,4 @@ export function SelectProfileContainer({ user, setProfile }) {
             </Profiles>
         </>
     );
-    // return <p>hello</p>
 }
