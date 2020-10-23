@@ -77,4 +77,5 @@ export const Picture = styled.img`
   left: 50%;
   margin-top: -100px;
   margin-left: -22px;
+  border-radius: 2px;
 `;
