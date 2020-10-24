@@ -1,16 +1,30 @@
 import styled from 'styled-components/macro';
 
-export const Container = styled.div`
+export const Title = styled.p`
 
+`;
+
+export const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+
+    > ${Title} {
+        @marker-end(max-width: 1000px) {
+            margin-left: 30px;
+        }
+    }
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
 `;
 
 export const Group = styled.div`
 
 `;
 
-export const Title = styled.p`
-
-`;
 
 export const SubTitle = styled.p`
 
