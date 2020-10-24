@@ -27,8 +27,8 @@ export const Container = styled.div`
 export const Group = styled.div`
   display: flex;
   flex-direction: ${({ flexDirection }) => (flexDirection === 'row' ? 'row' : 'column')};
-  ${({ alignItems }) => alignItems && `align-items: ${alignItems}`};
-  ${({ margin }) => margin && `margin: ${margin}`};
+  ${({ alignItems }) => alignItems && `align-items: ${alignItems};`};
+  ${({ margin }) => margin && `margin: ${margin};`};
   > ${Container}:first-of-type {
     @media (min-width: 1100px) {
       margin-top: -150px;
